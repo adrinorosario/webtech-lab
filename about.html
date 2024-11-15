@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us - Internet for Business</title>
+    <style>
+        /* Using the same styles from original page */
+        :root {
+            --primary: #000000;
+            --secondary: #86868b;
+            --accent: #0066cc;
+            --background: #ffffff;
+            --light-gray: #f5f5f7;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            background-color: var(--background);
+            color: var(--primary);
+            line-height: 1.6;
+        }
+
+        nav {
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            padding: 1rem 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 2.5rem;
+            list-style: none;
+        }
+
+        nav ul li a {
+            color: var(--primary);
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--accent);
+        }
+
+        .header-section {
+            padding: 8rem 2rem 4rem;
+            text-align: center;
+            background-color: var(--light-gray);
+        }
+
+        .about-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 4rem;
+        }
+
+        .about-card {
+            text-align: center;
+            padding: 2rem;
+            background: var(--background);
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-card h3 {
+            margin: 1rem 0;
+            color: var(--primary);
+        }
+
+        .about-card p {
+            color: var(--secondary);
+        }
+
+        .team-section {
+            padding: 4rem 2rem;
+            background-color: var(--light-gray);
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 2rem auto;
+        }
+
+        .team-member {
+            text-align: center;
+            padding: 2rem;
+            background: var(--background);
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            object-fit: cover;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 2.5rem;
+            color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="header-section">
+        <h1>About Us</h1>
+        <h2>Driving Innovation in Enterprise Solutions</h2>
+    </div>
+
+    <div class="about-content">
+        <p style="text-align: center; font-size: 1.2rem; max-width: 800px; margin: 0 auto; color: var(--secondary);">
+            Since our founding in 2010, we've been at the forefront of developing secure, efficient, and innovative solutions for businesses worldwide. Our commitment to excellence and security has made us a trusted partner for organizations of all sizes.
+        </p>
+
+        <div class="about-grid">
+            <div class="about-card">
+                <h3>Our Mission</h3>
+                <p>To provide cutting-edge enterprise solutions while maintaining the highest standards of security and privacy.</p>
+            </div>
+            <div class="about-card">
+                <h3>Our Vision</h3>
+                <p>To become the global leader in secure enterprise solutions, driving digital transformation across industries.</p>
+            </div>
+            <div class="about-card">
+                <h3>Our Values</h3>
+                <p>Innovation, Security, Privacy, Excellence, and Customer Success guide everything we do.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="team-section">
+        <h2 class="section-title">Our Leadership Team</h2>
+        <div class="team-grid">
+            <div class="team-member">
+                <img src="./assets/1663001636654.jpeg" alt="CEO">
+                <h3>Sarah Johnson</h3>
+                <p>Chief Executive Officer</p>
+            </div>
+            <div class="team-member">
+                <img src="./assets/michaelchen-3.jpg" alt="CTO">
+                <h3>Michael Chen</h3>
+                <p>Chief Technology Officer</p>
+            </div>
+            <div class="team-member">
+                <img src="./assets/1678310944232.jpeg" alt="COO">
+                <h3>David Smith</h3>
+                <p>Chief Operations Officer</p>
+            </div>
+            <div class="team-member">
+                <img src="./assets/1679803913778.jpeg" alt="CSO">
+                <h3>Emma Wilson</h3>
+                <p>Chief Security Officer</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

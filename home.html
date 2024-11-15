@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Internet for Business - Modern Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .header-section {
+    padding: 8rem 2rem 4rem;
+    text-align: center;
+    background-color: var(--light-gray);
+}
+
+.header-section h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header-section h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--secondary);
+    max-width: 800px;
+    margin: 0 auto;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="header-section">
+        <h1 id="mainTitle">Mission-driven. Business-focused.</h1>
+        <h2>We create enterprise solutions that prioritize security and privacy while delivering exceptional performance.</h2>
+    </div>
+
+    <div class="product-listing">
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="./assets/Firefly Enterprise-grade Security secure browsing solution 19430.jpg" alt="Secure browsing solution">
+                <h3>Enterprise-grade Security</h3>
+            </div>
+            <div class="product-card">
+                <img src="./assets/Firefly Data being protected by a firewall 90965.jpg" alt="Data protection">
+                <h3>Advanced Data Protection</h3>
+            </div>
+            <div class="product-card">
+                <img src="./assets/Firefly AI powered analytics solution 72323.jpg" alt="AI solutions">
+                <h3>AI-Powered Analytics</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="comparison-table">
+        <table>
+            <tr>
+                <th>Features</th>
+                <th>Enterprise</th>
+                <th>Business</th>
+                <th>Standard</th>
+            </tr>
+            <tr>
+                <td>Security</td>
+                <td>Advanced</td>
+                <td>Enhanced</td>
+                <td>Basic</td>
+            </tr>
+            <tr>
+                <td>Support</td>
+                <td>24/7 Priority</td>
+                <td>Business Hours</td>
+                <td>Email Only</td>
+            </tr>
+            <tr>
+                <td>Features</td>
+                <td>Full Suite</td>
+                <td>Extended</td>
+                <td>Essential</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="user-management-section">
+    
+        <h2 class="form-title">User Management</h2>
+        <form class="user-form" method="POST" action="mozilla_user_management.php">
+            <div class="form-group">
+                <label for="user_id">User ID</label>
+                <input type="text" id="user_id" name="user_id" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="product">Preferred Product</label>
+                <select id="product" name="product" required>
+                    <option value="">Select a product</option>
+                    <option value="Firefox">Firefox Browser</option>
+                    <option value="VPN">Mozilla VPN</option>
+                    <option value="Monitor">Firefox Monitor</option>
+                    <option value="Relay">Firefox Relay</option>
+                </select>
+            </div>
+    
+            <div class="button-group">
+                <button type="submit" name="insert" class="form-button primary-button">Add User</button>
+                <button type="submit" name="update" class="form-button primary-button">Update User</button>
+                <button type="submit" name="delete" class="form-button secondary-button">Delete User</button>
+                <button type="submit" name="select" class="form-button secondary-button">View All Users</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="ribbon">
+        <p>"Delivering enterprise solutions that transform business operations while maintaining the highest standards of privacy and security."</p>
+        <b>Our Promise to Business Leaders</b>
+    </div>
+
+    <footer>
+        <div class="footer-grid">
+            <div>
+                <h5>Solutions</h5>
+                <ul>
+                    <li><a href="#">Enterprise</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Standard</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5>Company</h5>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Press</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5>Support</h5>
+                <ul>
+                    <li><a href="#">Documentation</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Training</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5>Legal</h5>
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Security</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.write("<p style='text-align:center; color:#0066cc; padding:10px;'>Welcome to our Business Solutions</p>");
+        
+        function mouseOverCard(id) {
+            var card = document.getElementById(id);
+            card.style.transform = 'translateY(-10px)';
+            card.style.boxShadow = '0 10px 20px rgba(0, 0, 0, 0.2)';
+        }
+        
+        function mouseOutCard(id) {
+            var card = document.getElementById(id);
+            card.style.transform = 'translateY(0)';
+            card.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+        }
+        
+        // Function for navigation highlight
+        function mouseOverNav(id) {
+            var navItem = document.getElementById(id);
+            navItem.style.color = '#0066cc';
+            navItem.style.fontSize = '1.1rem';
+        }
+        
+        function mouseOutNav(id) {
+            var navItem = document.getElementById(id);
+            navItem.style.color = '#000000';
+            navItem.style.fontSize = '1rem';
+        }
+        
+   
+        function changeHeaderText() {
+            var header = document.getElementById('mainTitle');
+            header.innerHTML = 'Transforming Business Through Technology';
+            setTimeout(function() {
+                header.innerHTML = 'Mission-driven. Business-focused.';
+            }, 2000);
+        }
+        
+
+        function showDescription(id) {
+            var desc = document.getElementById('desc-' + id);
+            desc.style.display = 'block';
+        }
+        
+        function hideDescription(id) {
+            var desc = document.getElementById('desc-' + id);
+            desc.style.display = 'none';
+        }
+        
+
+        function highlightRow(id) {
+            var row = document.getElementById('row-' + id);
+            row.style.backgroundColor = '#f5f5f7';
+        }
+        
+        function unhighlightRow(id) {
+            var row = document.getElementById('row-' + id);
+            row.style.backgroundColor = '#ffffff';
+        }
+        
+        // Simple form validation for the products form
+        function validateForm() {
+            var name = document.getElementById('contactName').value;
+            var email = document.getElementById('contactEmail').value;
+            if (name == "" || email == "") {
+                alert("Please fill in all required fields");
+                return false;
+            }
+            alert("Thank you for your message!");
+            return true;
+        }
+        
+        function changeAccentColor(id) {
+            var colors = ['#0066cc', '#000000', '#86868b'];
+            var element = document.getElementById(id);
+            var randomColor = colors[Math.floor(Math.random() * colors.length)];
+            element.style.color = randomColor;
+        }
+        
+        function showDate() {
+            var date = new Date();
+            document.getElementById('currentDate').innerHTML = date.toLocaleDateString();
+        }
+        </script>
+</body>
+</html>
